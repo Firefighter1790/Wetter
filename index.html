@@ -26,9 +26,11 @@ html, body{
     padding:20px 35px;
     font-size:40px;
     font-weight:bold;
-    display:flex;
-    gap:25px;
-    align-items:center;
+
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows:auto auto;
+    gap:12px 40px;
 }
 
 .item{
@@ -42,6 +44,7 @@ html, body{
 <div id="weather">
     <div class="item">🌡 <span id="temp">--</span>°C</div>
     <div class="item"><span id="windIcon">🍃</span> <span id="wind">--</span> km/h</div>
+
     <div class="item">💧 <span id="hum">--</span>%</div>
     <div class="item"><span id="cloudIcon">☁️</span> <span id="clouds">--</span>%</div>
 </div>
